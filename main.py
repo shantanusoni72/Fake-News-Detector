@@ -2,8 +2,6 @@ from components import *
 
 source = load()
 
-'''
-Some operations
-'''
+#Some operations
 
 printResult(source)
