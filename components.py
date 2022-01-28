@@ -1,4 +1,16 @@
 import streamlit as st
+from nltk import sentiment
+import pandas as pd
+import nltk
+nltk.download('vader_lexicon')
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import classification_report
+import re
+import string
 
 def web():
 	html = """
@@ -24,7 +36,6 @@ def web():
 	st.markdown(html, unsafe_allow_html=True)
 	st.header("Fake News Detector")
 	source = st.text_input("", placeholder="Enter the alleged news heading in max 20 words")
-	st.button("Submit")
 	return source
 
 def load():
@@ -32,5 +43,17 @@ def load():
 	return source
 
 def printResult(source):
-	st.write(source)
+	if source != "":
+		st.write("Sentiment Analysis of alleged news: "+source)
+
+def sentimentAnalysis(source):
+	emotions = sentiment.SentimentIntensityAnalyzer()
+	if source != '':
+		status = emotions.polarity_scores(source)
+		if status['pos'] > status['neg']:
+			st.image('img/positive.png', width=50)
+		elif status['neg'] > status['pos']:
+			st.image('img/negative.png', width=50)
+		else:
+			st.image('img/neutral.png', width=50)
 
