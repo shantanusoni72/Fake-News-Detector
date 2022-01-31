@@ -4,6 +4,12 @@
 
 Little change in plan, we will use react/flask instead of streamlit for web interfac.
 
+# Installation
+
+run `npm start` in `/client` directory to start the frontend.
+
+run `python3 main.py` in `/server` directory to start the backend.
+
 Frontend: React.js
 
 Backend: Flask
