@@ -1,7 +1,6 @@
 # Fake-News-Detector
 
-![image](https://user-images.githubusercontent.com/75296055/151134974-655961ad-82c0-4f4b-9b80-c3641178aaf2.png)
+![image](https://user-images.githubusercontent.com/75296055/151779185-646cbdb4-5b68-4aac-b7da-af6fb64ee309.png)
 
-Only install streamlit 1.3.1
-
-Run `streamlit run main.py`
+Frontend: React.js
+Backend: Flask
