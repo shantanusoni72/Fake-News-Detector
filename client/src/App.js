@@ -1,10 +1,9 @@
 import './App.css';
-import { useEffect, useState } from 'react'
-import axios from 'axios'
 import Header from './components/header';
 import Screen from './components/screen'
 import About from './components/about'
 import Feedback from './components/feedback'
+import Footer from './components/footer';
 
 function App() {
 
@@ -18,6 +17,7 @@ function App() {
         <About />
         <Feedback />
       </div>
+      <Footer />
     </>
   )
 }

@@ -3,6 +3,7 @@ import random
 from nltk import sentiment
 import nltk
 nltk.download('vader_lexicon')
+from components import sentiment_analysis
 
 app = Flask(__name__)
 
@@ -13,19 +14,8 @@ def members():
 
 @app.route('/search/<string:news>')
 def search(news):
-   emotions = sentiment.SentimentIntensityAnalyzer()
-   res = { "id": random.randint(0,100000), "news_headline":news ,"score": "" }
-   if news != '':
-      status = emotions.polarity_scores(news)
-      if status['pos'] > status['neg']:
-         res["score"] = "Positive"
-         return res
-      elif status['neg'] > status['pos']:
-         res["score"] = "Negative"
-         return res
-      else:
-         res["score"] = "Neutal"
-         return res
+   res = { "id": random.randint(0,100000), "news_headline":news ,"score": "","result":"" }
+   news = sentiment_analysis(news,res)
    return news
 
 if __name__ == "__main__":

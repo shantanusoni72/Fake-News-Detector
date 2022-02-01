@@ -8,8 +8,8 @@ export default function Screen() {
     function getData() {
         const search = document.getElementById("search").value
         const link = "/search/" + search
-        setRes(true)
-        if (search != "") {
+        if (search !== "") {
+            setRes(true)
             axios({
                 method: "GET",
                 url: link,
@@ -33,6 +33,7 @@ export default function Screen() {
 
     return (<>
         <div className="screen_main">
+            <h2>Fake News Detector</h2>
             <input className="input_field" type="text" id="search" name="search" placeholder="Enter alleged news headline" />
             <input className="submitBtn" onClick={() => getData()} type="submit" value="Submit" />
         </div>

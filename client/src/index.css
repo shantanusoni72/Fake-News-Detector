@@ -29,7 +29,8 @@ code {
 
 .bg-div {
   background-image: url('img/bg.jpg');
-  height: 400px;
+  height:100%;
+  padding: 20px;
 }
 
 .screen_main {
@@ -38,27 +39,32 @@ code {
 
 .input_field {
   padding:13px;
+  border-radius: 5px;
   width:400px;
-  border-radius:5px;
   border-width: 1px;
 }
 
 .submitBtn {
-  padding:13px;
+  padding:10px;
+  height: 40px;
   background-color:rgb(61, 61, 255);
   color:white;
   border-radius:5px
 }
 
+.submitBtn:hover {
+  background-color: white;
+  color: rgb(61, 61, 255);
+}
+
 .about_main {
   display: flex;
-  padding: 50px;
   text-align: left;
 }
 
 .about_logo {
-  height: 400px;
-  width: 550px;
+  height: 300px;
+  width: 397px;
 }
 
 .article {
@@ -72,10 +78,67 @@ code {
 .rank {
   background-color: white;
   color: black;
-  height: 180px;
-  border-radius: 3px;
+  height: 150px;
+  border-radius: 7px;
   border-style: solid;
   margin-left: 400px;
   margin-right: 400px;
+  border-width: 1px;
   text-align: left;
+  padding: 10px;
+}
+
+.input_text_area {
+  margin-top: 3px;
+  height: 100px;
+  width: 400px;
+  font-family:sans-serif;
+  border-radius: 5px;
+  padding: 13px;
+}
+
+.screen_main h2 {
+  font-family: sans-serif;
+  color: white;
+  font-size: 50px;
+  padding: 0px;
+}
+
+.footer-main {
+  display: flex;
+  background-image:url("img/bg.jpg");
+  color: white;
+  padding: 30px;
+}
+
+.row-1 {
+  text-align: center;
+  padding-left: 500px;
+  padding-right: 300px;
+}
+
+.row-2 {
+  padding-left: 100px;
+  padding-right: 300px;
+}
+
+.row-1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.download-link {
+  font-size: 13px;
+  text-align: right;
+}
+
+.download-link input {
+  height: 11px;
+}
+
+@media screen and (max-width:414px) {
+  .bg-div {
+    width: 100%;
+    height: 100%;
+  }
 }
