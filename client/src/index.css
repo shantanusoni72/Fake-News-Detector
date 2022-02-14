@@ -24,7 +24,7 @@ code {
   list-style: none;
   padding-right: 20px;
   color:white;
-  text-decoration-style: none;
+  text-decoration: none;
 }
 
 .bg-div {
@@ -39,17 +39,41 @@ code {
 
 .input_field {
   padding:13px;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   width:400px;
   border-width: 1px;
 }
 
 .submitBtn {
-  padding:10px;
-  height: 40px;
+  padding: 10px;
+  padding-bottom: 14px;
+  height:0px;
+  width: 0px;
   background-color:rgb(61, 61, 255);
   color:white;
-  border-radius:5px
+  border-top-right-radius:5px;
+  border-bottom-right-radius: 5px;
+  text-decoration: none;
+}
+
+.feedBtn {
+  padding: 7px;
+  height:17px;
+  width: 17px;
+  background-color:rgb(61, 61, 255);
+  color:white;
+  font-size: 15px;
+  border-radius:5px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  text-decoration: none;
+}
+
+.feedBtn:hover {
+  background-color: white;
+  color: rgb(61, 61, 255);
 }
 
 .submitBtn:hover {
@@ -60,6 +84,8 @@ code {
 .about_main {
   display: flex;
   text-align: left;
+  padding-left: 34px;
+  padding-right: 34px;
 }
 
 .about_logo {
