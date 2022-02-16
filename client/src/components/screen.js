@@ -34,9 +34,11 @@ export default function Screen() {
     return (<>
         <div className="screen_main">
             <h2>Fake News Detector</h2>
-            <input className="input_field" type="text" id="search" name="search" placeholder="Enter alleged news headline" />
-            <a className="submitBtn" href="#google.com" onClick={() => getData()} type="submit">Submit</a>
+            <div className="inner_screen_main">
+                <input className="input_field" type="text" id="search" name="search" placeholder="Enter alleged news headline" />
+                <a className="submitBtn" href="#google.com" onClick={() => getData()} type="submit">Submit</a>
+            </div>
         </div>
-        { showRes ? <Result res={search_data} /> : null}
+        {showRes ? <Result res={search_data} /> : null}
     </>)
 }
