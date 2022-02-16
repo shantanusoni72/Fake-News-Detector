@@ -1,6 +1,8 @@
 # Fake-News-Detector
 
-![image](https://user-images.githubusercontent.com/75296055/151944578-645eb620-e2a0-47f9-ad7c-c8a97156d37a.png)
+![image](https://user-images.githubusercontent.com/75296055/154293850-b862879d-9a1f-42fc-b429-61725cfcb90d.png)
+
+![image](https://user-images.githubusercontent.com/75296055/154293932-c0717e07-9783-4fab-bed6-68a45a4a2851.png)
 
 Little change in plan, we will use react/flask instead of streamlit for web interface.
 
