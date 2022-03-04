@@ -1,6 +1,6 @@
 # Fake-News-Detector
 
-![image](https://user-images.githubusercontent.com/75296055/156773842-e9ca4780-7c97-44a9-8d43-92e8e31689ac.png)
+![image](https://user-images.githubusercontent.com/75296055/156774010-b9f37e29-fffc-4191-9702-b44768d95491.png)
 
 ![image](https://user-images.githubusercontent.com/75296055/154293932-c0717e07-9783-4fab-bed6-68a45a4a2851.png)
 
