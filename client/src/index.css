@@ -138,7 +138,7 @@ code {
 
   .about_logo {
     height: 90%;
-    width: 90%;
+    width: 50%;
     padding: 0%;
   }
 
@@ -146,6 +146,7 @@ code {
     padding: 0%;
     height: 100%;
     margin: 7%;
+    text-align: center;
   }
 
   .article {
@@ -224,6 +225,20 @@ code {
     border-radius: 5px;
     padding: 13px;
   }
+
+  .card {
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgb(26, 113, 212);
+    margin: 3px;
+    height: 100%;
+    width: 100%;
+    color:white
+  }
+
+  .card-container {
+    border-radius: 3px;
+  }
 }
 
 @media screen and (min-width:1545px) {
@@ -233,7 +248,7 @@ code {
 
   .about_logo {
     height: 300px;
-    width: 397px;
+    width: 317px;
   }
 
   .article {
@@ -329,7 +344,8 @@ code {
 
   .about_logo {
     height: 200px;
-    width: 297px;
+    width: 217px;
+    padding-top: 140px;
   }
 
   .footer-main {
@@ -360,5 +376,20 @@ code {
     border-width: 1px;
     text-align: left;
     padding: 10px;
+  }
+
+  .card {
+    padding: 13px;
+    border-radius: 7px;
+    background-color: rgb(26, 113, 212);
+    margin: 3px;
+    height: 150px;
+    width: 350px;
+    color:white
+  }
+
+  .card-container {
+    border-radius: 3px;
+    display: flex;
   }
 }
