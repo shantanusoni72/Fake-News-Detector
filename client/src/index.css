@@ -104,6 +104,11 @@ code {
   height: 11px;
 }
 
+#result {
+  color: rgb(30, 255, 0);
+  font-size: 14px;
+}
+
 @media screen and (max-width:414px) {
   .bg-div {
     width: 100vw;
@@ -269,7 +274,7 @@ code {
   .footer-main {
     display: flex;
     background-image:url("img/bg.jpg");
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 30px;
   }
 

@@ -14,7 +14,7 @@ export default function About() {
                 <img className="about_logo" src={About_Logo} alt="About Logo" />
             </div>
             <div className="article">
-            <h3>How To Fake News</h3>
+            <h3>How To Spot Fake News</h3>
                 <div class="card-container">
                     <div class="card" onMouseOver={()=>set1(true)}>{ show1 ? null :<h3>Develop a Critical Mindset</h3>}<br />
                         { show1 ? <>One of the main reasons fake news is such a big issue is that it is often believable, so it's easy to get caught out. Much fake news is also written to create "shock value," that is, a strong instinctive reaction such as fear or anger.
